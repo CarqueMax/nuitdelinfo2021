@@ -4,6 +4,7 @@
     }
     header {
         padding: 15px 40px;
+        border-radius: 0;
     }
     header.sticky {
         padding: 10px 25px;
@@ -22,13 +23,19 @@
         top: 100px;
         right:-100%;
         display: block;
-        transition: all 300ms;
+        transition: all 0.5s;
     }
     header ul li{
         padding : 3vh 0;
         margin : 4vh 0;
         font-size: 20px;
         line-height: 25px;
+    }
+    header.sticky{
+        background: #abc3d8;
+    }
+    header.sticky ul li a{
+        color: #ffff;
     }
     #check:checked ~ ul{
         right: 0;
