@@ -1,4 +1,132 @@
-h1 {
-    color: rgb(164, 75, 216);
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 300ms;
+    padding: 40px 75px;
+    z-index: 100000;
+    border-bottom-left-radius: 10px;
+}
+header .img-logo{
+    position: relative;
+    width: 5vw;
+    height: auto;
+    image-rendering: optimizeQuality;
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffff;
+    transition: 300ms;
+}
+header ul li a:hover{
+    color: #f5b15b;
+}
+
+/* sticky*/
+header.sticky {
+    padding: 20px 50px;
+    transition: 0.5s ease-in-out;
+    background: rgb(241, 236, 236);
+  }
+  
+  header.sticky ul li a{
+    color: #00394b;
+  }
+
+  header.sticky .logo{
+      color: #00394b
+  }
+  
+  header.sticky ul li a:hover{
+    color: #f5b15b;
+  }
+
+body{
+    background-color: WHITE;
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/mesh-gradient.png);
+}
+.landing-text {
+    padding: 10%;
+}
+.landing-text h2{
+    font-size: 3em;
+    color: black;
+}
+.landing-text p{
+    font-size: 1.2em;
+    color: #111;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vw;
+    background: url(img/wave.png);
+    background-size: 100% 100%;
+    animation: waves 4s ease-in-out infinite;
+    animation-delay: calc(var(--i)*0.25s);
+
+}
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 40vw;
+}
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 30vw;
+}
+.wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 20vw;
+}
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.1;
+    background-position-x: 10vw;
+}
+
+@keyframes waves {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
