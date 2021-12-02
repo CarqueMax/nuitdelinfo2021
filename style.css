@@ -19,7 +19,6 @@ header{
     transition: 300ms;
     padding: 20px 50px;
     z-index: 100000;
-    border-bottom-left-radius: 10px;
 }
 header .img-logo{
     position: relative;
@@ -47,11 +46,27 @@ header ul li a{
     transition: 300ms;
 }
 header ul li a:hover{
-    color: #f5b15b;
+    color: #ffff;
 }
+header ul li a:before{
+    position:absolute;
+    content:'';
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 100%;
+    background: rgb(233,75,62);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.5s ease;
+}
+header ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: right;
+    }
 label #btn,
 label #cancel{
-    color : #00394b;
+    color : #2b4162;
     font-size: 30px;
     float: right;
     margin-right: 2vw;
@@ -67,17 +82,11 @@ header.sticky {
     transition: 0.5s ease-in-out;
     background: #fff6;
   }
-  
   header.sticky ul li a{
-    color: #00394b;
+    color: #2b4162;
   }
-
-  header.sticky .logo{
-      color: #00394b
-  }
-  
-  header.sticky ul li a:hover{
-    color: #de6b48;
+  header.sticky ul li a:hover:before{
+    background: #2b4162;
   }
 
 body{
@@ -100,7 +109,7 @@ body{
     text-align: center;
     font-size: 3em;
     letter-spacing: 0.5vw;
-    color: black;
+    color: #2b4162;
 }
 .landing-text p{
     font-size: 1.2em;
