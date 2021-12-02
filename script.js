@@ -2,12 +2,15 @@ let wave1 = document.getElementById('wave1');
 let wave2 = document.getElementById('wave2');
 let wave3 = document.getElementById('wave3');
 let wave4 = document.getElementById('wave4');
+const inputs = document.querySelectorAll(".input");
 
+// Navbar
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
+// Vagues
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
 
@@ -17,3 +20,16 @@ window.addEventListener('scroll', function(){
     wave4.style.backgroundPositionX = 10 + value * -0.1 + 'vw';
 
 })
+
+// Login
+function addcl(){
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("focus");
+}
+
+function remcl(){
+	let parent = this.parentNode.parentNode;
+	if(this.value == ""){
+		parent.classList.remove("focus");
+	}
+}

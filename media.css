@@ -8,16 +8,33 @@
     header ul{
         position:fixed;
         width : 100%;
-        height: 100vh;
+        height: 100%;
+        padding: 0;
         background: #2b4162;
-        top: 80px;
-        right:0;
+        justify-content:center;
         text-align: center;
+        top: 100px;
+        right:-100%;
+        display: block;
+        transition: all 300ms;
+    }
+    header ul li{
+        padding : 3vh 0;
+        margin : 4vh 0;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
     }
 
-    header ul li{
-        display: flex;
-        flex-direct
-    }
+
+    
     
 }
