@@ -1,3 +1,18 @@
+<?php
+    session_start();
+
+    try
+    {
+        // On se connecte à MySQL
+        $bdd = new PDO('mysql:host=localhost;dbname=website;charset=utf8', 'root','root',
+            array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    }
+    catch(Exception $e)
+    {
+        // En cas d'erreur, on affiche un message et on arrête tout
+            die('Erreur : '.$e->getMessage());
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -58,44 +73,60 @@
                     <a href="">Estaminet</a>
                 </div>
             </li>
-            <li><a href="login.php">Se connecter</a></li>
-            <li><a href="register.php">S'inscrire</a></li>
+            <?php
+                if(!isset($_SESSION['username'])){ 
+            ?>
+                    <li><a href="login_final.php">Se connecter</a></li>
+                    <li><a href='register_final.php'>Sinscrire</a></li>
+            <?php 
+                }else{
+                        
+                        session_start();
+                        echo '<a style="color: black;>"Salut "</a>'.$_SESSION['username']." ";
+            ?>
+                        <a style="color: black;" href="logout.php">Logout</a>
+            <?php
+                }
+            ?>
         </ul>
     </header>
     <section class="main">
-        blblblbl
-        <?php if (isset($_POST['recherche'])) { ?>
-        <div>
-            <table>
-                <tr>
-                <th>Nom</th>
-                <th>Prénoms</th>
-                </tr>
-            <?php
-                $count = 0;
-                $recherche =  $_POST['recherche'];
-                $req = $bdd -> query("SELECT * FROM personnes");
-                while ($donnees = $req -> fetch()) { ?>
-                <?php
-                $str = strtolower($donnees['Nom']);
-                $str1 = strtolower($_POST['recherche']);
-                $str2 = strtolower($donnees['Prenom']);
-                if ($str ==$str1 OR $str2 == $str1) {
-                    $count = $count + 1;
-            ?>
-            <tr>
-                <td><a href=<?php echo $donnees['Url'] ?>><?php echo $donnees['Nom'] ?></a></td>
-                <td><a href=<?php echo $donnees['Url'] ?>><?php echo $donnees['Prenom'] ?></a></td>
-            </tr>
-            <?php
-                    }
-                }
-                if($count == 0){
-                    echo "Ce nom n'est pas présent dans les archives";
-                }?>
-            </table>
-        </div> 
-        <?php } ?>
+        <?php
+    if (isset($_POST['recherche'])) { ?>
+    <div>
+      <table>
+        <tr>
+          <th>Nom</th>
+          <th>Prénoms</th>
+        </tr>
+      <?php
+        $count = 0;
+        $recherche =  $_POST['recherche'];
+        $req = $bdd -> query("SELECT * FROM personnes");
+        while ($donnees = $req -> fetch()) { ?>
+          <?php
+          $str = strtolower($donnees['Nom']);
+          $str1 = strtolower($_POST['recherche']);
+          $str2 = strtolower($donnees['Prenom']);
+          if ($str ==$str1 OR $str2 == $str1) {
+            $count = $count + 1;
+           ?>
+          <tr>
+            <td><a href=<?php echo $donnees['Url'] ?>><?php echo $donnees['Nom'] ?></a></td>
+            <td><a href=<?php echo $donnees['Url'] ?>><?php echo $donnees['Prenom'] ?></a></td>
+          </tr>
+      <?php
+          }
+        }
+        if($count == 0){
+          echo "Ce nom n'est pas présent dans les archives";
+        }?>
+        </table>
+ </div> <?php
+      }
+
+       ?>
+
     </section>
     <div class="footer-wave" id="wave5" style="--i:1"></div>
     <div class="footer-wave" id="wave6" style="--i:2"></div>
