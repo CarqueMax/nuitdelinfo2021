@@ -1,4 +1,4 @@
-@media (max-width:650px) {
+@media (max-width:980px) {
     label #btn{
         display: block;
     }
@@ -47,16 +47,17 @@
         display: block;
     }
 
+    
+
     .main{
         width:320px;
       }
-      .footer-wave-box {
+    .footer-wave-box {
         display: none;
       }
-      .single-footer:first-child, .single-footer {
+    .single-footer:first-child, .single-footer {
         width: 100%;
         margin-bottom:30px;
       }
-    
-    
 }
+

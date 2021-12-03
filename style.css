@@ -127,7 +127,6 @@ body{
     background-size: 100% 100%;
     animation: waves 4s ease-in-out infinite;
     animation-delay: calc(var(--i)*0.25s);
-
 }
 .wave#wave1 {
     z-index: 1000;
@@ -153,6 +152,52 @@ body{
 .corps {
     width: 100%;
     height: 100vh;
+}
+
+.recherche{
+    margin-top: 10vh;
+    position: relative;
+    width: 500px;
+    left: 50
+    align-items: center;
+}
+.recherche h2{
+    font-size: 30px;
+}
+.recherche p{
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 3vh;
+}
+input{
+    position:relative;
+    display: inline-block;
+    font-size:20px;
+    transition: .5s;
+}
+input[type="text"]{
+    background: #abc3d8;
+    width: 280px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 20px 0 0 20px;
+}
+input[type="submit"]{
+    position:relative;
+    border-radius: 0 20px 20px 0;
+    height: 50px;
+    width: 140px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #2b4162;
+    color: #ffff;
+}
+input[type="submit"]:hover{
+    background-color:#abc3d8;
+    color: #2b4162;
 }
 
 
