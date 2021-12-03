@@ -56,12 +56,12 @@
 						<i class="fas fa-envelope"></i>
            		   </div>
            		   <div class="div">
-           		    	<input type="email" placeholder="Entrez votre adresse mail" name="mail" required>
+           		    	<input type="email" name="mail" required>
 						<h5>E-mail</h5>
             	   </div>
             	</div>
             	<a href="#">J'ai besoin d'aide</a>
-            	<input type="submit" name = 'submit' id='submit'>
+            	<input type="submit" name = 'submit' class="btn" id='submit'>
             </form>
         </div>
     </div>
