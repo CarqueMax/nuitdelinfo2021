@@ -155,6 +155,9 @@ body{
     height: 100vh;
 }
 
+
+  
+  
 @keyframes waves {
     0% {
         transform: translateY(0px);

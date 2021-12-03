@@ -47,7 +47,16 @@
         display: block;
     }
 
-
+    .main{
+        width:320px;
+      }
+      .footer-wave-box {
+        display: none;
+      }
+      .single-footer:first-child, .single-footer {
+        width: 100%;
+        margin-bottom:30px;
+      }
     
     
 }
