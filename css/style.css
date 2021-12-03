@@ -172,7 +172,7 @@ input{
     position:relative;
     display: inline-block;
     font-size:20px;
-    transition: .1s;
+    transition: .5s;
 }
 input[type="text"]{
     background: #abc3d8;
@@ -196,7 +196,7 @@ input[type="submit"]{
     cursor: pointer;
     background: #2b4162;
     color: #ffff;
-    transition: 0.5s eas
+    transition: 0.5s ease;
 }
 input[type="submit"]:hover{
     background-color:#abc3d8;
