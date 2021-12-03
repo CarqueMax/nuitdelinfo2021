@@ -209,6 +209,7 @@ body{
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 40vh;
+    margin-bottom: 15vh;
 }
 .grid-item {
     width: 320px;
@@ -216,7 +217,7 @@ body{
 }
 .img-grid{
     position: relative;
-    width: 400px;
+    width: 300px;
     height: auto;
     image-rendering: optimizeQuality;
 }
@@ -229,7 +230,7 @@ body{
 	left: calc(50% - 1px);
 }
 .recherche{
-    margin-top: 10vh;
+    margin-bottom: 10vh;
     position: relative;
     width: 100%;
     text-align: center;

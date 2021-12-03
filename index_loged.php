@@ -1,3 +1,17 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['username'])){
+    header("Location: index.php");
+        die();
+  }
+  if($_SESSION['username'] == 'admin'){
+      header("Location: admin.php");
+            die();
+  }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,9 +22,9 @@
     <title>Sauveteurs du dunkerquois</title>
     <link rel="icon" href="img/logo.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="footer.css">
     <!-- Icône -->
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
 </head>
@@ -28,7 +42,7 @@
     ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #2b4162;
+	background-color: #f5b15b;
     }
 </style>
 <body>
@@ -45,20 +59,13 @@
         <ul>
             <li><a href="#">Présentation</a></li>
             <li><a href="#recherche">Recherche</a></li>
-            <li class="nav-item dropdown"><a class="dropbtn">Catégories <i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="">Sauveteurs</a>
-                    <a href="">Sorties en mer</a>
-                    <a href="">Stations</a>
-                    <a href="">Moyens maritimes</a>
-                    <a href="">Techniques</a>
-                    <a href="">Historiques</a>
-                    <a href="">Compléments</a>
-                    <a href="">Estaminet</a>
-                </div>
-            </li>
-            <li><a href="login.php">Se connecter</a></li>
-            <li><a href="register.php">S'inscrire</a></li>
+            <li><a href="#">Moyens Maritimes</a></li>
+            <li><a href="#">Partenariat</a></li>
+             <?php 
+                session_start();
+                echo '<a style="color: white;>"Salut "</a>'.$_SESSION['username']." ";
+             ?>
+            <a style="color: white;" href="logout.php">Logout</a>
         </ul>
        
         
@@ -77,23 +84,12 @@
         <div class="wave" id="wave4" style="--i:4 "></div>
     </section>
     <div class="corps">
-        <h2> Présentation </h2>
-        <div class="grille">
-            <div class="grid-item">
-                Bienvenue sur le site des sauveteurs du dunkerquois. Ce site rend hommage aux femmes, hommes et enfants qui ont réalisé des actes de sauvetages en milieu aquatique.
-Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe), ont participé à plus de 900 sauvetages en mer et plus de 1100 sauvetages individuels. Œuvrant avec courage, abnégation et souvent au mépris du risque ils méritent amplement que leurs actes soient pérennisés.
-            </div>
-            <div class="grid-item">
-                <img src="img/snsm.png" class="img-grid">
-            </div>
-        </div>
         <div class="recherche" id="recherche">
             <h2>A la recherche de...</h2>
             <p>Entrez le sauveteur ou le sauvetage que vous voulez retrouver</p>
-            <form>
-                <i class="fas fa-search" id="loupe"></i>
-                <input type="text" class="search" name="box" placeholder="Rechercher...">
-                <input type="submit" name="button" value="Rechercher">
+            <form action="info.php" method="POST"> 
+                <input type="text" class="search" name="recherche" placeholder="Rechercher...">
+                <input type="submit" name="rechercher" value="Rechercher">
             </form>
         </div>
     </div>
@@ -114,21 +110,8 @@ Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe),
                 <div class="footer-col">
                     <h4>Catégories</h4>
                     <ul>
-                        <li><a href="">Sauveteurs</a></li>
-                        <li><a href="">Sorties en mer</a></li>
-                        <li><a href="">Stations</a></li>
-                        <li><a href="">Moyens maritimes</a></li>
-                        <li><a href="">Techniques</a></li>
-                        <li><a href="">Historiques</a></li>
-                        <li><a href="">Compléments</a></li>
-                        <li><a href="">Estaminet</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Compte</h4>
-                    <ul>
-                        <li><a href="#">S'inscrire</a></li>
-                        <li><a href="#">Se connecter</a></li>
+                        <li><a href="#">Moyens Maritimes</a></li>
+                        <li><a href="#">Partenariat</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -143,6 +126,6 @@ Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe),
         </div>
    </footer>
     <!-- JavaScript -->
-    <script src="js/script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

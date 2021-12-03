@@ -64,7 +64,9 @@
     .corps{
         margin-bottom: 50vh;
     }
-
+    .grille{
+        grid-gap: 10vh;
+    }
     .grid-item::before{
         visibility: hidden;
     }

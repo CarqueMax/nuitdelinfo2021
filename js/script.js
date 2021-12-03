@@ -22,15 +22,14 @@ window.addEventListener('scroll', function(){
 })
 
 // Easter Egg
-window.addEventListener('keydown', function(event) {
-    if(event.keyCode == 73) {
-        if(event.keyCode == 68) {
-            if(event.keyCode == 73 {
-                if(event.keyCode == 81) {
-                    if(event.keyCode == 73 {
-                        alert('Left was pressed');
-                }
-            })
-    }
+var egg = new Egg();
+egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+    jQuery('#egggif').fadeIn(500, function() {
+    window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
 });
+egg.addHook(function(){
+    console.log("Hook called for: " + this.activeEgg.keys);
+    console.log(this.activeEgg.metadata);
+}).listen();
+
 
