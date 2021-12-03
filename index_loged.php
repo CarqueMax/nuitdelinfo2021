@@ -22,9 +22,9 @@
     <title>Sauveteurs du dunkerquois</title>
     <link rel="icon" href="img/logo.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- Icône -->
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
 </head>

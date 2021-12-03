@@ -8,7 +8,7 @@
     <title>Sauveteurs du dunkerquois</title>
     <link rel="shortcut icon" href="img/logo.png"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="css/register.css">
     <!-- Icône -->
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
 </head>
@@ -21,9 +21,6 @@
 			<img src="img/background.png">
 		</div>
 		<div class="login-content">
-
-
-
 			<form method="POST" action="db.php">
 				<img src="img/avatar.svg">
 				<h2 class="title">S'inscrire</h2>
