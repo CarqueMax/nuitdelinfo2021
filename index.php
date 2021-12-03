@@ -70,8 +70,8 @@
                     <a href="">Estaminet</a>
                 </div>
             </li>
-            <li><a href="login.php">Se connecter</a></li>
-            <li><a href="register.php">S'inscrire</a></li>
+            <li><a href="login_final.php">Se connecter</a></li>
+            <li><a href="register_final.php">S'inscrire</a></li>
         </ul>
        
         
