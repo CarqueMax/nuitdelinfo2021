@@ -82,7 +82,7 @@ label #cancel{
 header.sticky {
     padding: 15px 75px;
     transition: 0.5s ease-in-out;
-    background: #fff6;
+    background: rgba(198, 212, 229, 0.753);
   }
   header.sticky ul li a{
     color: #2b4162;
@@ -157,9 +157,8 @@ body{
 .recherche{
     margin-top: 10vh;
     position: relative;
-    width: 500px;
-    left: 50
-    align-items: center;
+    width: 100%;
+    text-align: center;
 }
 .recherche h2{
     font-size: 30px;
@@ -173,7 +172,7 @@ input{
     position:relative;
     display: inline-block;
     font-size:20px;
-    transition: .5s;
+    transition: .1s;
 }
 input[type="text"]{
     background: #abc3d8;
@@ -184,6 +183,9 @@ input[type="text"]{
     padding: 0 25px;
     border-radius: 20px 0 0 20px;
 }
+input:focus {
+    border: 1.5px solid #2b4162;
+  }
 input[type="submit"]{
     position:relative;
     border-radius: 0 20px 20px 0;
@@ -198,6 +200,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color:#abc3d8;
     color: #2b4162;
+    border: 1.5px solid #2b4162;
 }
 
 

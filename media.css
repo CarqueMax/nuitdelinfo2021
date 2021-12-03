@@ -61,3 +61,15 @@
       }
 }
 
+@media (max-width:425px){
+    input[type="text"],
+    input[type="submit"]{
+        border-radius: 20px;
+    }
+    input[type="submit"]{
+        margin-top: 0.5vh;
+    }
+
+
+}
+
