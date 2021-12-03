@@ -47,7 +47,6 @@
 </style>
 <body>
     <header>
-        
         <a href="#landing" class="logo">
             <img src="img/logo.png" class="img-logo">
         </a>

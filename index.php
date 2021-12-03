@@ -103,10 +103,10 @@ Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe),
         <div class="recherche" id="recherche">
             <h2>A la recherche de...</h2>
             <p>Entrez le sauveteur ou le sauvetage que vous voulez retrouver</p>
-            <form>
+            <form action="info.php" method="post">
                 <i class="fas fa-search" id="loupe"></i>
-                <input type="text" class="search" name="box" placeholder="Rechercher...">
-                <input type="submit" name="button" value="Rechercher">
+                <input type="text" class="search" name="recherche" placeholder="Rechercher...">
+                <input type="submit" name="rechercher" value="Rechercher">
             </form>
         </div>
     </div>
