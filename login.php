@@ -8,7 +8,7 @@
     <title>Sauveteurs du dunkerquois</title>
     <link rel="shortcut icon" href="img/logo.png"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
     <!-- Icône -->
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
 </head>
@@ -46,6 +46,6 @@
             </form>
         </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
