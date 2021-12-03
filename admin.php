@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/admin.css">
     <!-- Icône -->
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
-</head>
 </head>
 <style>
     /* Scrollbar */
@@ -62,41 +61,15 @@
             <li><a href="register.php">S'inscrire</a></li>
         </ul>
     </header>
-    <section class="main">
-        blblblbl
-        <?php if (isset($_POST['recherche'])) { ?>
-        <div>
-            <table>
-                <tr>
-                <th>Nom</th>
-                <th>Prénoms</th>
-                </tr>
-            <?php
-                $count = 0;
-                $recherche =  $_POST['recherche'];
-                $req = $bdd -> query("SELECT * FROM personnes");
-                while ($donnees = $req -> fetch()) { ?>
-                <?php
-                $str = strtolower($donnees['Nom']);
-                $str1 = strtolower($_POST['recherche']);
-                $str2 = strtolower($donnees['Prenom']);
-                if ($str ==$str1 OR $str2 == $str1) {
-                    $count = $count + 1;
-            ?>
-            <tr>
-                <td><a href=<?php echo $donnees['Url'] ?>><?php echo $donnees['Nom'] ?></a></td>
-                <td><a href=<?php echo $donnees['Url'] ?>><?php echo $donnees['Prenom'] ?></a></td>
-            </tr>
-            <?php
-                    }
-                }
-                if($count == 0){
-                    echo "Ce nom n'est pas présent dans les archives";
-                }?>
-            </table>
-        </div> 
-        <?php } ?>
-    </section>
+    <section class="main"></section>
+    <div class="container">
+        <div class="img">
+            <img src="img/avatar.svg">
+        </div>
+        <div class="title">
+            <h1>Administrateur</h1>
+        </div>
+    </div>
     <div class="footer-wave" id="wave5" style="--i:1"></div>
     <div class="footer-wave" id="wave6" style="--i:2"></div>
     <div class="footer-wave" id="wave7" style="--i:3"></div>

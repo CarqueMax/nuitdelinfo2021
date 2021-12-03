@@ -1,0 +1,23 @@
+header ul li a{
+    color: #2b4162;
+}
+
+.main {
+    height: 10vw;
+    width: 100%;
+    background-color: red;
+}
+
+.img {
+    width: 100%;
+}
+
+.img img {
+    width: 50%;
+}
+
+@media (max-width:980px) {
+    .main {
+        height: 20vw;
+    }
+}

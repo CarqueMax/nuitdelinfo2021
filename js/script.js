@@ -21,3 +21,16 @@ window.addEventListener('scroll', function(){
 
 })
 
+// Easter Egg
+window.addEventListener('keydown', function(event) {
+    if(event.keyCode == 73) {
+        if(event.keyCode == 68) {
+            if(event.keyCode == 73 {
+                if(event.keyCode == 81) {
+                    if(event.keyCode == 73 {
+                        alert('Left was pressed');
+                }
+            })
+    }
+});
+
