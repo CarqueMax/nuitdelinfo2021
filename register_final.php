@@ -13,8 +13,6 @@
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-
 	<img class="wave" src="img/wave_login.png">
 	<div class="container">
 		<div class="img">
