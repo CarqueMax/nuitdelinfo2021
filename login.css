@@ -96,37 +96,21 @@ form{
 	color: #999;
 	font-size: 18px;
 	transition: .3s;
+	user-select: none;
+	display: inline-block;
+	pointer-events: none;
+	transition: all 0.2s;
 }
 
-.input-div:before, .input-div:after{
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	width: 0%;
-	height: 2px;
-	background-color: #38d39f;
-	transition: .4s;
+.div input {
+	margin-left: 11px;
 }
-
-.input-div:before{
-	right: 50%;
+.div input:focus ~ h5, .div input:valid ~ h5{
+  transform: translateY(-30px);
+  color: #2B4162;
 }
-
-.input-div:after{
-	left: 50%;
-}
-
-.input-div.focus:before, .input-div.focus:after{
-	width: 50%;
-}
-
-.input-div.focus > div > h5{
-	top: -5px;
-	font-size: 15px;
-}
-
-.input-div.focus > .i > i{
-	color: #38d39f;
+.div input:focus, .div input:valid{
+  border-bottom-color: white;
 }
 
 .input-div > div > input{
@@ -138,9 +122,7 @@ form{
 	border: none;
 	outline: none;
 	background: none;
-	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #555;
 	font-family: 'poppins', sans-serif;
 }
 
@@ -156,9 +138,12 @@ a{
 	font-size: 0.9rem;
 	transition: .3s;
 }
+.register {
+	text-align: center;
+}
 
 a:hover{
-	color: #38d39f;
+	color: #2B4162;
 }
 
 .btn{
@@ -168,18 +153,17 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-	background-size: 200%;
+	background-color: #2B4162;
 	font-size: 1.2rem;
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin: 1rem 0;
 	cursor: pointer;
-	transition: .5s;
+	transition: .1s;
 }
 .btn:hover{
-	background-position: right;
+	background-color: #385580;
 }
 
 
