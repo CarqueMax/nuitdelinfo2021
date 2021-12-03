@@ -8,6 +8,7 @@
     }
     header.sticky {
         padding: 10px 25px;
+        background: #abc3d8;
     }
     header .img-logo{
         width: 75px;
@@ -25,15 +26,19 @@
         display: block;
         transition: all 0.5s;
     }
+    .dropdown-content {
+        width: 100%;
+    }
+    header.sticky .dropdown-content a {
+        color: #2b4162;
+    }
     header ul li{
         padding : 3vh 0;
         margin : 4vh 0;
         font-size: 20px;
         line-height: 25px;
     }
-    header.sticky{
-        background: #abc3d8;
-    }
+
     header.sticky ul li a{
         color: #ffff;
     }
