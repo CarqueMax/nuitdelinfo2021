@@ -191,7 +191,7 @@ body{
 
 .corps {
     width: 100%;
-    height: 100vh;
+    min-height: 70vw;
     margin-bottom: 5rem;
 }
 .corps h2 {
