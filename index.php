@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   session_start();
   if(isset($_SESSION['username'])){
     header("Location: index_loged.php");
@@ -10,7 +10,7 @@
   }
 
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="fr">
