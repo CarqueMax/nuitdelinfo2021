@@ -192,6 +192,7 @@ body{
 .corps {
     width: 100%;
     min-height: 70vw;
+    max-height: 75vw;
     margin-bottom: 5rem;
 }
 .corps h2 {
