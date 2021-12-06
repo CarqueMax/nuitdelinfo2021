@@ -58,7 +58,7 @@
 						<h5>E-mail</h5>
             	   </div>
             	</div>
-            	<a href="https://help.assoconnect.com/hc/fr/articles/202666862-Je-n-arrive-pas-%C3%A0-me-connecter-%C3%A0-mon-compte">J'ai besoin d'aide</a>
+            	<a target="_blank" href="https://help.assoconnect.com/hc/fr/articles/202666862-Je-n-arrive-pas-%C3%A0-me-connecter-%C3%A0-mon-compte">J'ai besoin d'aide</a>
             	<input type="submit" name = 'submit' class="btn" id='submit'>
             </form>
         </div>
