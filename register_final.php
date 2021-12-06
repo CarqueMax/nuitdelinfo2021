@@ -8,7 +8,7 @@
     <title>Sauveteurs du dunkerquois</title>
     <link rel="shortcut icon" href="img/logo.png"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="register.css">
     <!-- Icône -->
     <script src="https://kit.fontawesome.com/229e0007f4.js" crossorigin="anonymous"></script>
 </head>
@@ -58,7 +58,7 @@
 						<h5>E-mail</h5>
             	   </div>
             	</div>
-            	<a href="#">J'ai besoin d'aide</a>
+            	<a href="https://help.assoconnect.com/hc/fr/articles/202666862-Je-n-arrive-pas-%C3%A0-me-connecter-%C3%A0-mon-compte">J'ai besoin d'aide</a>
             	<input type="submit" name = 'submit' class="btn" id='submit'>
             </form>
         </div>

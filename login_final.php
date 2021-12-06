@@ -75,12 +75,12 @@
             	<a href="#">J'ai besoin d'aide</a>
             	<?php
                     if($pass == false){
-                        echo "Wrong password, try again";
+                        echo "L'identifaint ou le mot de passe semble incorrect";
                     }
                 ?>
                 <input type="submit" class="btn" name = 'submit' id='submit'>
 
-				<a href="register_final" class="register">Je n'ai pas de compte</a>
+				<a href="register_final.php" class="register">Je n'ai pas de compte</a>
             </form>
         </div>
     </div>
