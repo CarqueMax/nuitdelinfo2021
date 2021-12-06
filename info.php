@@ -165,8 +165,8 @@
                 <div class="footer-col">
                     <h4>Nous contacter</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/groups/938396409644949 "><i class="fab fa-facebook-f"></i></a>
-                        <a href="http://boutelierphili1/"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/groups/938396409644949 "><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://mobile.twitter.com/boutelierphili1"><i class="fab fa-twitter"></i></a>
                         <a href="mailto:sauveteurdudunkerquois@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>

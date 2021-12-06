@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   session_start();
   if(isset($_SESSION['username'])){
     header("Location: index_loged.php");
@@ -10,7 +10,7 @@
   }
 
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -79,10 +79,6 @@
     <section class="landing" id="landing">
         <div class="landing-text">
             <h2>Sauveteurs  du dunkerquois</h2>
-            <!-- <p>
-                Magna ea magna sint ex ut. Nulla et pariatur quis culpa aliquip et eu quis aliquip. 
-                Duis sint exercitation officia Lorem cillum proident consectetur.
-            </p> -->
         </div>
         <div class="wave" id="wave1" style="--i:1"></div>
         <div class="wave" id="wave2" style="--i:2"></div>
@@ -147,8 +143,8 @@ Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe),
                 <div class="footer-col">
                     <h4>Nous contacter</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/groups/938396409644949 "><i class="fab fa-facebook-f"></i></a>
-                        <a href="http://boutelierphili1/"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/groups/938396409644949 "><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://mobile.twitter.com/boutelierphili1"><i class="fab fa-twitter"></i></a>
                         <a href="mailto:sauveteurdudunkerquois@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>

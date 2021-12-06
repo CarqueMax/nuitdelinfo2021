@@ -8,8 +8,6 @@
       header("Location: admin.php");
             die();
   }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +40,7 @@
     ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #f5b15b;
+	background-color: #2b4162;
     }
 </style>
 <body>
@@ -56,15 +54,25 @@
             <i class="fas fa-times" id="cancel"></i> 
         </label>
         <ul>
-            <li><a href="#">Présentation</a></li>
+            <li><a href="#presentation">Présentation</a></li>
             <li><a href="#recherche">Recherche</a></li>
-            <li><a href="#">Moyens Maritimes</a></li>
-            <li><a href="#">Partenariat</a></li>
+            <li class="nav-item dropdown"><a class="dropbtn">Catégories <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="">Sauveteurs</a>
+                    <a href="">Sorties en mer</a>
+                    <a href="">Stations</a>
+                    <a href="">Moyens maritimes</a>
+                    <a href="">Techniques</a>
+                    <a href="">Historiques</a>
+                    <a href="">Compléments</a>
+                    <a href="">Estaminet</a>
+                </div>
+            </li>
              <?php 
                 session_start();
                 echo '<a style="color: white;>"Salut "</a>'.$_SESSION['username']." ";
              ?>
-            <a style="color: white;" href="logout.php">Logout</a>
+            <a style="color: white;" href="logout.php"> Logout</a>
         </ul>
        
         
@@ -72,10 +80,6 @@
     <section class="landing" id="landing">
         <div class="landing-text">
             <h2>Sauveteurs  du dunkerquois</h2>
-            <!-- <p>
-                Magna ea magna sint ex ut. Nulla et pariatur quis culpa aliquip et eu quis aliquip. 
-                Duis sint exercitation officia Lorem cillum proident consectetur.
-            </p> -->
         </div>
         <div class="wave" id="wave1" style="--i:1"></div>
         <div class="wave" id="wave2" style="--i:2"></div>
@@ -116,8 +120,8 @@
                 <div class="footer-col">
                     <h4>Nous contacter</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/groups/938396409644949 "><i class="fab fa-facebook-f"></i></a>
-                        <a href="http://boutelierphili1/"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/groups/938396409644949 "><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://mobile.twitter.com/boutelierphili1"><i class="fab fa-twitter"></i></a>
                         <a href="mailto:sauveteurdudunkerquois@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>

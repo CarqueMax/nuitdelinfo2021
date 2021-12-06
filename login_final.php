@@ -80,7 +80,7 @@
                 ?>
                 <input type="submit" class="btn" name = 'submit' id='submit'>
 
-				<a target="_blank" href="https://help.assoconnect.com/hc/fr/articles/202666862-Je-n-arrive-pas-%C3%A0-me-connecter-%C3%A0-mon-compte" class="register">Je n'ai pas de compte</a>
+				<a href="register_final.php" class="register">Je n'ai pas de compte</a>
             </form>
         </div>
     </div>
