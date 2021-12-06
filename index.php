@@ -22,7 +22,7 @@
     <title>Sauveteurs du dunkerquois</title>
     <link rel="icon" href="img/logo.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- Icône -->
